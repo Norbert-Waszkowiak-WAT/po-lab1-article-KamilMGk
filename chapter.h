@@ -12,8 +12,8 @@ class Chapter{
     public:
     Chapter();
     Chapter(string chapterTitle, Author chapterAuthor, int number);
-    Chapter(Chapter &other);
-    Chapter(Article &article);
+    Chapter(const Chapter &other);
+    Chapter(const Article &article);
     void displayInfo();
     string getTitle();
     Author getAuthor();

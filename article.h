@@ -12,11 +12,11 @@ string journal;
 public:
 Article();
 Article(string articleTitle, Author articleAuthor, int year, string journalName);
-Article(Article &other);
+Article(const Article &other);
 void displayinfo();
-string getTitle();
-Author getAuthor();
-int getPublicationYear();
-string getJournal();
+string getTitle() const;
+Author getAuthor() const;
+int getPublicationYear() const;
+string getJournal() const;
 };
 #endif    
